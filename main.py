@@ -13,22 +13,22 @@ app.title('Pomodoro Timer')
 #app.geometry('450x300+200+200')
 
 #Creating Frames
-top_left = Frame(app)
-top_right= Frame(app)
-bottom_frame = Frame(app)
+top_left = tk.Frame(app)
+top_right= tk.Frame(app)
+bottom_frame = tk.Frame(app)
 top_left.grid(row=0,column=0)
 top_right.grid(row=0,column=1)
 bottom_frame.grid(columnspan=2)
 
-labelText = StringVar()
+labelText = tk.StringVar()
 labelText.set('Click this button')
-label1 = Label(top_left,textvariable=labelText) #height controls position of the text
+label1 = tk.Label(top_left,textvariable=labelText) #height controls position of the text
 label1.pack()
 
 button1 = tk.Button(top_right,text='hello')
 button1.pack(side='bottom')
 
-starting_value=StringVar()
+starting_value=tk.StringVar()
 starting_value.set('25')
 working_time = tk.Spinbox(bottom_frame,from_=0,to=60,textvariable=starting_value)
 working_time.pack()
