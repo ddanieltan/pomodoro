@@ -10,7 +10,7 @@ import Tkinter as tk
 #Creating a window
 app = tk.Tk()
 app.title('Pomodoro Timer')
-#app.geometry('450x300+200+200')
+app.geometry('300x100+200+200')
 
 #Creating Frames
 top_left = tk.Frame(app)
