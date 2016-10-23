@@ -6,14 +6,17 @@ Created on Sun Oct 23 11:04:58 2016
 """
 
 import time
+import subprocess
 
 def start_timer(minutes):
-    time_left = minutes
+    time_left = minutes * 60
     while time_left > 0:
-        print 'Time left: {}min / {}min'.format(time_left, minutes)
-        time.sleep(1)
-        time_left -= 1
-
+        print 'Time left: {}min / {}min'.format(time_left/60, minutes)
+        time.sleep(60)
+        time_left -= 60
+    #Play alarm
+    subprocess.call(['play shipbell.wav'], shell=True)
+    
 def main():
     print '---Pomodoro Timer---'
     timer_log = {}
