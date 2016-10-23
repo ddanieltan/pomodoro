@@ -10,3 +10,6 @@ Run [terminal.py](https://github.com/ddanieltan/pomodoro/blob/master/terminal.py
 * You are suggested to take a long break of about 30 minutes after 4 runs.
 
 [main.py](https://github.com/ddanieltan/pomodoro/blob/master/main.py) is a work in progress, where I am trying to create a GUI for this app using Tkinter.
+
+
+This app was written in 4 Pomodoro runs.
